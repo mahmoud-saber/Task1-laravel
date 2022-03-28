@@ -20,7 +20,7 @@ class newsController extends Controller
     $newimage->store('images');
     }
    $data =$this->validate($request,[
-       "title"=>"required |string|regex:/^[A-Za-z]",
+       "title"=>"required |string|regex:/^[A-Za-z]*$/i",
       "content"=>"required|min:5|max:60",
       "image"=>"required|file"
 
