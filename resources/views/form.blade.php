@@ -51,7 +51,7 @@
 
             <div class="form-group">
                 <label for="exampleInputName">Image</label>
-                <input type="file" name="image">
+                <input type="file" name="image"  value="<?php echo old('image');?>>
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>

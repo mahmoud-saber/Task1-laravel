@@ -21,8 +21,8 @@ class newsController extends Controller
     }
    $data =$this->validate($request,[
        "title"=>"required |not_regex:[a-zA-Z]",
-      "content"=>"required|min:5|max:10",
-      "image"=>"file"
+      "content"=>"required|min:5|max:60",
+      "image"=>"required|file"
 
    ]);
    dd($data);
